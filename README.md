@@ -1,7 +1,7 @@
 # 20-03-19 React Conditional Rendering CW
 
 #### Set Up
-- Create a react app called buy-sell-app
+- Create a react app called `buy-sell-app`
 - Create a class based component called `AppContainer` that displays an h1 tag with the text `Buy Sell App`
 - Reference the `AppContainer` in the `App` component
 
