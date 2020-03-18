@@ -34,7 +34,6 @@ class ListOfItems extends Component {
                                 <div key = {index}>
                                     <p>{item.title}</p>
                                     <p>{item.price}</p>
-                                    <p>{item.condition}</p>
                                 </div>
                             )
                         })

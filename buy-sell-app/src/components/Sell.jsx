@@ -40,7 +40,7 @@ class Sell extends Component {
                         <legend>Sell an Item</legend>
 
                         <div className="formGroup">
-                            <label htmlFor="">Title : </label>
+                            <label htmlFor="title">Title : </label>
                             <input type="text" name="title" id="title" value={this.state.title} onChange={this.handleChange} />
                         </div>
 
