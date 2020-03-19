@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 class ListOfItems extends Component {
+    // useless constructor
     constructor(props) {
         super(props);
         this.state = {
@@ -8,6 +9,7 @@ class ListOfItems extends Component {
         }
     }
 
+    // display list of items for sell and item offers
     render() {
         return (
             <div>
@@ -15,6 +17,7 @@ class ListOfItems extends Component {
                 <h2>Items for Sell</h2>
                 <div>
                     {
+                        // iterate through array passed from parent
                         this.props.itemsForSell.map((item, index) => {
                             return (
                                 <div key = {index}>
@@ -29,6 +32,7 @@ class ListOfItems extends Component {
                 <h2>Items Offers</h2>
                 <div>
                     {
+                        // iterate through array passed from parent
                         this.props.itemOffers.map((item, index) => {
                             return (
                                 <div key = {index}>

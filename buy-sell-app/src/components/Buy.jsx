@@ -3,15 +3,19 @@ import React, { Component } from 'react';
 class Buy extends Component {
     constructor(props) {
         super(props);
+        // set initial state
         this.state = {
             title: "",
             price: 0,
         }
     }
 
+    // event handler - tied to OnClick
     handleChange = (event) => {
+        // variables for event.target properties
         let fieldName = event.target.name;
         let fieldValue = event.target.value;
+        // conditionally update state based on input 
         if (fieldName === "title") {
             this.setState({ [fieldName]: fieldValue });
         } else if (fieldName === "price") {
@@ -19,15 +23,18 @@ class Buy extends Component {
         }
     }
 
+    // event handler - tied to onClick
     handleSubmission = (event) => {
-        event.preventDefault();
-        this.props.updateItemOffers(this.state);
+        event.preventDefault(); // stop form from reloading
+        this.props.updateItemOffers(this.state); // call function based from parent passing in form values
+        // reset form fields
         this.setState({
             title: "",
             price: 0,
         })
     }
 
+    // display Buy form
     render() {
         return (
             <div>
